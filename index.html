@@ -2,34 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmudul Bhuiyan - Chemist Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f4f4f4; }
-        header { text-align: center; background: white; padding: 20px; border-radius: 8px; }
-        section { margin: 20px 0; background: white; padding: 20px; border-radius: 8px; }
-        h1, h2 { color: #333; }
-    </style>
+    <title>Saidul Islam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Mahmudul Bhuiyan</h1>
-        <p>BSc in Chemistry · Graduate Research Student · Dinajpur, Bangladesh</p>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Analytical chemist specializing in food safety, ATR-FTIR spectroscopy, nanozyme sensing, and chemometric analysis at Hajee Mohammad Danesh Science & Technology University.</p>
-        <p>Email: mahmudulb.shihab@gmail.com</p>
-    </section>
-    
-    <section id="interests">
-        <h2>Research Interests</h2>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Saidul Islam</h2>
         <ul>
-            >Nanozyme sensing</li>
-            >Point-of-use kit development</li>
-            >Sustainable food safety</li>
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('research')">Research</li>
+            <li onclick="showSection('publication')">Publication</li>
+            <li onclick="showSection('awards')">Awards</li>
+            <li onclick="showSection('activities')">Activities</li>
+            <li onclick="showSection('skills')">Skills</li>
+            <li onclick="showSection('accomplishments')">Accomplishments</li>
+            <li onclick="showSection('projects')">Projects</li>
+            <li onclick="showSection('gallery')">Gallery</li>
         </ul>
-    </section>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <section id="home" class="active">
+            <h1>Saidul Islam</h1>
+            <p>Chemistry Student | FTIR & Chemometrics | Machine Learning Enthusiast</p>
+            <p>B.Sc. Chemistry student with research experience in ATR-FTIR spectroscopy, chemometric analysis, and machine learning.</p>
+        </section>
+
+        <section id="research">
+            <h1>Research</h1>
+            <ul>
+                <li>Spectroscopic Chemometric Analysis</li>
+                <li>Machine Learning in Chemistry</li>
+                <li>Nanoparticle & Semiconductor Research</li>
+                <li>Computational Chemistry</li>
+                <li>Sustainable Energy</li>
+            </ul>
+        </section>
+
+        <section id="publication">
+            <h1>Publications</h1>
+            <p>Journal of AOAC International (2025)</p>
+            <p>Springer Book Chapter (Under Review)</p>
+        </section>
+
+        <section id="awards">
+            <h1>Awards</h1>
+            <ul>
+                <li>Silver Explorer Award (2025)</li>
+                <li>2nd Position – Digital Skill Development</li>
+                <li>1st Runner-up – Programming Contest</li>
+            </ul>
+        </section>
+
+        <section id="activities">
+            <h1>Activities</h1>
+            <ul>
+                <li>Bangladesh Red Crescent Society Volunteer</li>
+                <li>Seminar & Technical Support</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <p><strong>Lab:</strong> ATR-FTIR, UV-Vis, Sample Prep</p>
+            <p><strong>Tech:</strong> Python, C++, MATLAB, SIMCA, SPSS</p>
+        </section>
+
+        <section id="accomplishments">
+            <h1>Accomplishments</h1>
+            <p>Publications, Conferences, Competitions</p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>Honey Adulteration Detection using FTIR & ML</li>
+                <li>Milk Adulteration Analysis</li>
+                <li>Nanomaterial ML Prediction</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <p>Add your images later</p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
