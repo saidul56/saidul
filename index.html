@@ -2,100 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Saidul Islam | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidul Islam | Data Analyst & Researcher</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<div class="container">
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Saidul Islam</h2>
-        <ul>
-            <li onclick="showSection('home')">Home</li>
-            <li onclick="showSection('research')">Research</li>
-            <li onclick="showSection('publication')">Publication</li>
-            <li onclick="showSection('awards')">Awards</li>
-            <li onclick="showSection('activities')">Activities</li>
-            <li onclick="showSection('skills')">Skills</li>
-            <li onclick="showSection('accomplishments')">Accomplishments</li>
-            <li onclick="showSection('projects')">Projects</li>
-            <li onclick="showSection('gallery')">Gallery</li>
+    <nav id="navbar">
+        <div class="logo">Saidul<span>Islam</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
-    </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-    <!-- Content -->
-    <div class="content">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Saidul Islam</h1>
+            <p>M.Sc. in Chemistry | Research Assistant | Data Analyst</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#research" class="btn">View My Work</a>
+        </div>
+    </section>
 
-        <section id="home" class="active">
-            <h1>Saidul Islam</h1>
-            <p>Chemistry Student | FTIR & Chemometrics | Machine Learning Enthusiast</p>
-            <p>B.Sc. Chemistry student with research experience in ATR-FTIR spectroscopy, chemometric analysis, and machine learning.</p>
-        </section>
+    <section id="research" class="container">
+        <h2 class="section-title">Research Focus</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-microscope"></i>
+                <h3>Chemometric Analysis</h3>
+                <p>Specializing in FTIR spectroscopy and multivariate techniques like PLS, OPLS-DA, and MCR-ALS.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-seedling"></i>
+                <h3>Food Safety</h3>
+                <p>Developing methods for detecting adulteration in honey, oils, and dairy products.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="research">
-            <h1>Research</h1>
-            <ul>
-                <li>Spectroscopic Chemometric Analysis</li>
-                <li>Machine Learning in Chemistry</li>
-                <li>Nanoparticle & Semiconductor Research</li>
-                <li>Computational Chemistry</li>
-                <li>Sustainable Energy</li>
-            </ul>
-        </section>
+    <section id="publications" class="container bg-light">
+        <h2 class="section-title">Publications</h2>
+        <div class="pub-item">
+            <h4>Journal of AOAC INTERNATIONAL</h4>
+            <p>Research article regarding farm-fresh and branded honey authentication using spectral data.</p>
+        </div>
+        <div class="pub-item">
+            <h4>Book Chapter: Metal-Oxide Nanoparticles</h4>
+            <p>Chapter 14: Metal-Oxide Nanoparticles for Air Pollution Control.</p>
+        </div>
+    </section>
 
-        <section id="publication">
-            <h1>Publications</h1>
-            <p>Journal of AOAC International (2025)</p>
-            <p>Springer Book Chapter (Under Review)</p>
-        </section>
+    <section id="awards" class="container">
+        <div class="split-grid">
+            <div>
+                <h2 class="section-title">Awards</h2>
+                <ul>
+                    <li><strong>Silver Explorer Award</strong> - 3rd International Poster Competition 2025</li>
+                    <li><strong>Qualification Winner</strong> - International Computer Science Competition</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="section-title">Accomplishments</h2>
+                <ul>
+                    <li>Poster Presentation - 7th International Conference on Food Safety</li>
+                    <li>Completed Bartlett Research Training</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section id="awards">
-            <h1>Awards</h1>
-            <ul>
-                <li>Silver Explorer Award (2025)</li>
-                <li>2nd Position – Digital Skill Development</li>
-                <li>1st Runner-up – Programming Contest</li>
-            </ul>
-        </section>
+    <section id="skills" class="container bg-light">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-flex">
+            <span>Python (Scikit-Learn, XGBoost)</span>
+            <span>R Programming</span>
+            <span>Chemometrics</span>
+            <span>FTIR Spectroscopy</span>
+            <span>Machine Learning</span>
+            <span>Data Visualization</span>
+        </div>
+    </section>
 
-        <section id="activities">
-            <h1>Activities</h1>
-            <ul>
-                <li>Bangladesh Red Crescent Society Volunteer</li>
-                <li>Seminar & Technical Support</li>
-            </ul>
-        </section>
+    <section id="gallery" class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/conference1.jpg" alt="Conference"></div>
+            <div class="gallery-item"><img src="images/award.jpg" alt="Award Presentation"></div>
+            <div class="gallery-item"><img src="images/lab.jpg" alt="Lab Work"></div>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h1>Skills</h1>
-            <p><strong>Lab:</strong> ATR-FTIR, UV-Vis, Sample Prep</p>
-            <p><strong>Tech:</strong> Python, C++, MATLAB, SIMCA, SPSS</p>
-        </section>
+    <footer>
+        <p>&copy; 2026 Saidul Islam | Built with HTML/CSS/JS</p>
+    </footer>
 
-        <section id="accomplishments">
-            <h1>Accomplishments</h1>
-            <p>Publications, Conferences, Competitions</p>
-        </section>
-
-        <section id="projects">
-            <h1>Projects</h1>
-            <ul>
-                <li>Honey Adulteration Detection using FTIR & ML</li>
-                <li>Milk Adulteration Analysis</li>
-                <li>Nanomaterial ML Prediction</li>
-            </ul>
-        </section>
-
-        <section id="gallery">
-            <h1>Gallery</h1>
-            <p>Add your images later</p>
-        </section>
-
-    </div>
-
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
 
 <script src="script.js"></script>
 </body>
